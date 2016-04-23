@@ -1,0 +1,20 @@
+<html ng-app='myApp'>
+<head>
+	<title>Orders and Customers</title>
+	<script type="text/javascript" src="angular/angular.js"></script>
+	<script type="text/javascript" src="angular-route/angular-route.js"></script>
+	
+	<script type="text/javascript" src="./js/model/customerFactory.js"></script>
+	<script type="text/javascript" src="./js/model/orderFactory.js"></script>
+
+	<script type="text/javascript" src="./js/controller/customersController.js"></script>
+	<script type="text/javascript" src="./js/controller/ordersController.js"></script>
+	<script type="text/javascript" src="./js/config/routes.js"></script>
+</head>
+<body>
+		<div>
+			<a href="#/customers">Customers</a> | <a href="#/orders">Orders</a>
+			<div ng-view=''></div>
+		</div>
+</body>
+</html>
